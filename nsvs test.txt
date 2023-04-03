@@ -1,0 +1,45 @@
+testfragen nsvs:
+
+lansecurity:
+möglichkeiten der atacken bzw. der mitigation
+Layer2 Security Threats. Ich habe ein switch was kann ich böse machen
+NAtive vlan,was ist eine saubares settings für vlan(wie haben eine konfiguration gemacht)
+dhcp attacks
+stp attacks (wie der spaning three die aufteilung macht)
+arp atacken manipulation
+MAc addrese table flooding, macof(muss man nicht wissen)
+Lan atacken -> vlan 802.1Q trunk wie funktioniert die attacke hier, also in vlan reinhengen, port die nicht verwendet werden auschalten, den
+trunk rausschmeisen,native vlan umlegen darf nicht benutzt werden, alle acces ports in vlan einlegen, 
+discover offer request acknolage -> dort kann man sich reinhengen
+DHCP starvation(ip pool hat keine addresen mehr),DHCP spofing(ein zweiter dhcp server anhengen)
+falschen dns server geben, domain umdrehen
+Adress spofing attack -> manipulation von adressen und sagen ich bin jemand anders
+THe switch ovewrite current mac table and assign to ne port
+Implementig port security -> limit mac adressen bzw max mac addres, nur diese mac adressen lasse ich zu, also welche möglichkeite
+gibt es zu absicherung, was passiert wenn sie port security zusclagt und das port geht es auf shutdown, 
+port ist in error diasbled state deswegen mussen mir manuel eingreifen
+VLan attacks, mann sollte sie nur sauber konfiguriren -> rest muss man nich wissen
+DHCP Mitigation -> man vatraurt nur den ports die zentral sind, mann vetraut nich offen ports und dort darf man nicht einen DHCP server einschalten
+also gut uberlegen welche port wir erlauben wo man dhcp server einsteken kann, auf dhcp gibt es ein raid limit und somit kann man
+nich 100 abfragen pro sekunden machen das legt man auf den port
+STP ATTACKEN portfast und bdpu guard, mit portfast switch STP auschalten, zweite möglichkeit BDPU GUAR um kontrolle das dort kein 
+spaning tree sein kann. das sollte mann immer am enddevice konfigurieren
+Portfast schalten stp aus, BPDU quard blockiert ein loop.
+--------------------------------------------------------------------------------------------
+
+
+Port security: ich mache eine fixe mac adresse, ich erlaube nur 3 mac addrese, sticky(addrese lernen) 
+DAI und IPSG kommt nicht im test 
+arp attacken(arp spoofing) kommen nicht.
+---------------------------------------------------------------------------------------------
+VoIP(RTP,SIP,Codec) 
+rtp -> im header steckt timestamp drinen, zeitfaktor bei multimedia reinbringen
+sip -> überblick wissen, wass sip ist wo ist es also overwiev und 7 schichten model, sip ist eine aplikation
+bzw. singlaisierung und wird uber udp,tcp getriben, sprache ist über udp
+es sieht wie eine klasiche email addrese, die location muss in dns registriert werden, DNS server
+SIP Trapezoid erklaren client a will b erreichen(alle einzelne elemente erklaren) 
+beim einfachen ablauf erklaren trying ringing muss man wissen
+codec -> das was wir berechenet haben analog zu digital
+message details kommen nicht 
+SIP Call Scenarien, call setup, registration, call close mit bye(auf wikipedia anscheun bild anshceun)
+ 
